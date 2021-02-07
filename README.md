@@ -6,7 +6,7 @@
 
 ## 用法
 
-运行命令（也可下载 Dockerfile 后自行 `docker build -t imwhatiam/python3-saml-demo-django:v1 .`）：
+运行命令（也可下载 Dockerfile 和 settings.json 到同一目录后自行 `docker build -t imwhatiam/python3-saml-demo-django:v1 .`）：
 
 ```
 docker run -it -p 8000:8000 --name test-saml2 imwhatiam/python3-saml-demo-django:v1 bash
