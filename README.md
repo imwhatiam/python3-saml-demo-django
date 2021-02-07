@@ -6,7 +6,7 @@
 
 ## 用法
 
-运行命令（也可下载 Dockerfile 后自行 docker build）：
+运行命令（也可下载 Dockerfile 后自行 `docker build -t imwhatiam/python3-saml-demo-django:v1 .`）：
 
 ```
 docker run -it -p 8000:8000 --name test-saml2 imwhatiam/python3-saml-demo-django:v1 bash
@@ -51,4 +51,4 @@ invalid_response
 Reason: The status code of the Response was not Success, was Responder -> unexpected
 ```
 
-查看 https://samltest.id/logs/idp.log 有 log（./logout-error-from-idp.log），估计是签名、加密的问题，未做进一步调测。
+查看 https://samltest.id/logs/idp.log 上的 [log](./logout-error-from-idp.log)，估计是签名、加密的问题，未做进一步调测。
