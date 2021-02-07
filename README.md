@@ -1,6 +1,6 @@
 # python3-saml-demo-django
 
-1. idp 使用 https://samltest.id/ 提供的服务。
+1. idp 使用 https://samltest.id/ 提供的服务。也可对接 onelogin 提供您的 idp 服务，具体参考：https://developers.onelogin.com/saml/python 。
 
 1. sp 使用 https://github.com/onelogin/python3-saml
 
