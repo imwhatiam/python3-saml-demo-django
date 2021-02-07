@@ -1,0 +1,86 @@
+2021-02-07 09:55:05,281 - DEBUG [org.opensaml.saml.saml2.binding.decoding.impl.HTTPRedirectDeflateDecoder:?] - Decoded RelayState: http://127.0.0.1:8000/
+2021-02-07 09:55:05,281 - DEBUG [org.opensaml.saml.saml2.binding.decoding.impl.HTTPRedirectDeflateDecoder:?] - Base64 decoding and inflating SAML message
+2021-02-07 09:55:05,281 - DEBUG [org.opensaml.saml.saml2.binding.decoding.impl.HTTPRedirectDeflateDecoder:?] - Decoded SAML message
+2021-02-07 09:55:05,282 - DEBUG [PROTOCOL_MESSAGE:?] -
+<?xml version="1.0" encoding="UTF-8"?>
+<samlp:LogoutRequest
+    Destination="https://samltest.id/idp/profile/SAML2/Redirect/SSO"
+    ID="ONELOGIN_4e40bd5b53a4651ed7d9589b0c75946cda0f867d"
+    IssueInstant="2021-02-07T09:55:05Z" Version="2.0"
+    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+        xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
+    <saml:Issuer>http://127.0.0.1:8000/metadata/</saml:Issuer>
+    <saml:NameID
+        Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"
+        NameQualifier="https://samltest.id/saml/idp" SPNameQualifier="http://127.0.0.1:8000/metadata/">AAdzZWNyZXQxm7gggmW268pW01i/nOxpnu/bAmC6kP8PrR6cWgmJUU+LIK9J+ePoZxMfZl8BWVSWUilAMkqTrJNfqHWr2+/bBipvu+808IJzQUoLfuoe3Djnz+baU74Ts6I7ZxaA8iOG</saml:NameID>
+    <samlp:SessionIndex>_422d3a761fd40af441f1125fcdcd5fa0</samlp:SessionIndex>
+</samlp:LogoutRequest>
+
+2021-02-07 09:55:05,288 - INFO [org.opensaml.saml.metadata.resolver.impl.AbstractDynamicMetadataResolver:?] - Metadata Resolver LocalDynamicMetadataResolver SAMLtestFolder: Successfully loaded new EntityDescriptor with entityID 'http://127.0.0.1:8000/metadata/' from origin source
+2021-02-07 09:55:05,288 - DEBUG [org.opensaml.saml.metadata.resolver.impl.PredicateRoleDescriptorResolver:?] - Resolved 1 source EntityDescriptors
+2021-02-07 09:55:05,288 - DEBUG [org.opensaml.saml.metadata.resolver.impl.PredicateRoleDescriptorResolver:?] - Resolved 1 RoleDescriptor candidates via role criteria, performing predicate filtering
+2021-02-07 09:55:05,288 - DEBUG [org.opensaml.saml.metadata.resolver.impl.PredicateRoleDescriptorResolver:?] - Attempting to filter candidate RoleDescriptors via resolved Predicates
+2021-02-07 09:55:05,288 - DEBUG [org.opensaml.saml.metadata.resolver.impl.PredicateRoleDescriptorResolver:?] - After predicate filtering 1 RoleDescriptors remain
+2021-02-07 09:55:05,288 - DEBUG [org.opensaml.saml.common.binding.impl.SAMLMetadataLookupHandler:?] - Message Handler:  org.opensaml.saml.common.messaging.context.SAMLMetadataContext added to MessageContext as child of org.opensaml.saml.common.messaging.context.SAMLPeerEntityContext
+2021-02-07 09:55:05,288 - DEBUG [org.opensaml.saml.common.binding.impl.SAMLAddAttributeConsumingServiceHandler:?] - Message Handler:  Selecting default AttributeConsumingService, if any
+2021-02-07 09:55:05,288 - DEBUG [org.opensaml.saml.common.binding.impl.SAMLAddAttributeConsumingServiceHandler:?] - Message Handler:  No AttributeConsumingService selected
+2021-02-07 09:55:05,288 - DEBUG [net.shibboleth.idp.saml.profile.impl.InitializeRelyingPartyContextFromSAMLPeer:?] - Profile Action InitializeRelyingPartyContextFromSAMLPeer: Attaching RelyingPartyContext based on SAML peer http://127.0.0.1:8000/metadata/
+2021-02-07 09:55:05,289 - DEBUG [net.shibboleth.idp.profile.interceptor.impl.FilterFlowsByNonBrowserSupport:?] - Profile Action FilterFlowsByNonBrowserSupport: Request does not have non-browser requirement, nothing to do
+2021-02-07 09:55:05,289 - DEBUG [org.opensaml.saml.common.binding.security.impl.ReceivedEndpointSecurityHandler:?] - Message Handler:  Checking SAML message intended destination endpoint against receiver endpoint
+2021-02-07 09:55:05,289 - DEBUG [org.opensaml.saml.common.binding.security.impl.ReceivedEndpointSecurityHandler:?] - Message Handler:  Intended message destination endpoint: https://samltest.id/idp/profile/SAML2/Redirect/SSO
+2021-02-07 09:55:05,289 - DEBUG [org.opensaml.saml.common.binding.security.impl.ReceivedEndpointSecurityHandler:?] - Message Handler:  Actual message receiver endpoint: https://samltest.id/idp/profile/SAML2/Redirect/SSO
+2021-02-07 09:55:05,289 - DEBUG [org.opensaml.saml.common.binding.security.impl.ReceivedEndpointSecurityHandler:?] - Message Handler:  SAML message intended destination endpoint matched recipient endpoint
+2021-02-07 09:55:05,289 - DEBUG [org.opensaml.saml.common.binding.security.impl.MessageReplaySecurityHandler:?] - Message Handler:  Evaluating message replay for message ID 'ONELOGIN_4e40bd5b53a4651ed7d9589b0c75946cda0f867d', issue instant '2021-02-07T09:55:05.000Z', entityID 'http://127.0.0.1:8000/metadata/'
+2021-02-07 09:55:05,289 - DEBUG [org.opensaml.saml.saml2.binding.security.impl.SAML2AuthnRequestsSignedSecurityHandler:?] - Inbound message is not an instance of AuthnRequest, skipping evaluation...
+2021-02-07 09:55:05,289 - DEBUG [org.opensaml.saml.common.binding.security.impl.SAMLProtocolMessageXMLSignatureSecurityHandler:?] - Message Handler:  SAML protocol message was not signed, skipping XML signature processing
+2021-02-07 09:55:05,289 - DEBUG [org.opensaml.saml.common.binding.security.impl.BaseSAMLSimpleSignatureSecurityHandler:?] - Message Handler:  Evaluating simple signature rule of type: org.opensaml.saml.saml2.binding.security.impl.SAML2HTTPRedirectDeflateSignatureSecurityHandler
+2021-02-07 09:55:05,289 - DEBUG [org.opensaml.saml.common.binding.security.impl.BaseSAMLSimpleSignatureSecurityHandler:?] - Message Handler:  HTTP request was not signed via simple signature mechanism, skipping
+2021-02-07 09:55:05,290 - DEBUG [org.opensaml.saml.common.binding.security.impl.BaseSAMLSimpleSignatureSecurityHandler:?] - Message Handler:  Evaluating simple signature rule of type: org.opensaml.saml.saml2.binding.security.impl.SAML2HTTPPostSimpleSignSecurityHandler
+2021-02-07 09:55:05,290 - DEBUG [org.opensaml.saml.common.binding.security.impl.BaseSAMLSimpleSignatureSecurityHandler:?] - Message Handler:  Handler can not handle this request, skipping
+2021-02-07 09:55:05,290 - DEBUG [net.shibboleth.idp.profile.interceptor.impl.FilterFlowsByNonBrowserSupport:?] - Profile Action FilterFlowsByNonBrowserSupport: Request does not have non-browser requirement, nothing to do
+2021-02-07 09:55:05,290 - DEBUG [net.shibboleth.idp.saml.profile.impl.InitializeOutboundMessageContext:?] - Profile Action InitializeOutboundMessageContext: Initialized outbound message context
+2021-02-07 09:55:05,290 - DEBUG [net.shibboleth.idp.saml.profile.impl.PopulateBindingAndEndpointContexts:?] - Profile Action PopulateBindingAndEndpointContexts: Attempting to resolve endpoint of type {urn:oasis:names:tc:SAML:2.0:metadata}AssertionConsumerService for outbound message
+2021-02-07 09:55:05,290 - DEBUG [org.opensaml.saml.common.binding.AbstractEndpointResolver:?] - Endpoint Resolver org.opensaml.saml.common.binding.impl.DefaultEndpointResolver: Returning 1 candidate endpoints of type {urn:oasis:names:tc:SAML:2.0:metadata}AssertionConsumerService
+2021-02-07 09:55:05,290 - DEBUG [net.shibboleth.idp.saml.profile.impl.PopulateBindingAndEndpointContexts:?] - Profile Action PopulateBindingAndEndpointContexts: Resolved endpoint at location http://127.0.0.1:8000/?acs using binding urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST
+2021-02-07 09:55:05,290 - DEBUG [net.shibboleth.idp.saml.saml2.profile.delegation.impl.PopulateDelegationContext:?] - Request is not a SAML 2 AuthnRequest
+2021-02-07 09:55:05,290 - DEBUG [org.opensaml.saml.common.profile.impl.PopulateSignatureSigningParameters:?] - Profile Action PopulateSignatureSigningParameters: Signing enabled
+2021-02-07 09:55:05,291 - DEBUG [org.opensaml.saml.common.profile.impl.PopulateSignatureSigningParameters:?] - Profile Action PopulateSignatureSigningParameters: Signing not enabled
+2021-02-07 09:55:05,291 - DEBUG [net.shibboleth.idp.saml.saml2.profile.impl.PopulateEncryptionParameters:?] - Profile Action PopulateEncryptionParameters: Encryption for assertions (true), identifiers (false), attributes(false)
+2021-02-07 09:55:05,291 - DEBUG [net.shibboleth.idp.saml.saml2.profile.impl.PopulateEncryptionParameters:?] - Profile Action PopulateEncryptionParameters: Resolving EncryptionParameters for request
+2021-02-07 09:55:05,291 - DEBUG [net.shibboleth.idp.saml.saml2.profile.impl.PopulateEncryptionParameters:?] - Profile Action PopulateEncryptionParameters: Adding entityID to resolution criteria
+2021-02-07 09:55:05,291 - DEBUG [net.shibboleth.idp.saml.saml2.profile.impl.PopulateEncryptionParameters:?] - Profile Action PopulateEncryptionParameters: Adding role metadata to resolution criteria
+2021-02-07 09:55:05,291 - DEBUG [org.opensaml.saml.security.impl.MetadataCredentialResolver:?] - Resolving credentials from supplied RoleDescriptor using usage: ENCRYPTION.  Effective entityID was: http://127.0.0.1:8000/metadata/
+2021-02-07 09:55:05,291 - DEBUG [org.opensaml.saml.security.impl.SAMLMetadataEncryptionParametersResolver:?] - Could not resolve encryption parameters based on SAML metadata, falling back to locally configured credentials and algorithms
+2021-02-07 09:55:05,291 - DEBUG [net.shibboleth.idp.saml.saml2.profile.impl.PopulateEncryptionParameters:?] - Profile Action PopulateEncryptionParameters: Failed to resolve EncryptionParameters
+2021-02-07 09:55:05,291 - DEBUG [net.shibboleth.idp.saml.saml2.profile.impl.PopulateEncryptionParameters:?] - Profile Action PopulateEncryptionParameters: Resolver returned no EncryptionParameters
+2021-02-07 09:55:05,291 - DEBUG [net.shibboleth.idp.saml.saml2.profile.impl.PopulateEncryptionParameters:?] - Profile Action PopulateEncryptionParameters: Encryption is optional, ignoring inability to encrypt
+2021-02-07 09:55:05,295 - DEBUG [org.opensaml.saml.common.messaging.context.SAMLSubjectNameIdentifierContext:?] - Ignoring LogoutRequest, Subject does not require processing
+2021-02-07 09:55:05,295 - DEBUG [net.shibboleth.idp.saml.profile.impl.ExtractSubjectFromRequest:?] - Profile Action ExtractSubjectFromRequest: No Subject NameID/NameIdentifier in message needs inbound processing
+2021-02-07 09:55:05,295 - WARN [org.opensaml.profile.action.impl.LogEvent:?] - A non-proceed event occurred while processing the request: InvalidMessageContext
+2021-02-07 09:55:05,296 - DEBUG [org.opensaml.saml.common.profile.logic.DefaultLocalErrorPredicate:?] - Error event InvalidMessageContext will be handled with response
+2021-02-07 09:55:05,296 - DEBUG [org.opensaml.saml.saml2.profile.impl.AbstractResponseShellAction:?] - Profile Action AddStatusResponseShell: Setting Issuer to https://samltest.id/saml/idp
+2021-02-07 09:55:05,296 - DEBUG [org.opensaml.saml.common.profile.impl.AddInResponseToToResponse:?] - Profile Action AddInResponseToToResponse: Attempting to add InResponseTo to outgoing Response
+2021-02-07 09:55:05,297 - DEBUG [org.opensaml.saml.saml2.profile.impl.AddStatusToResponse:?] - Profile Action AddStatusToResponse: Detailed errors are enabled
+2021-02-07 09:55:05,297 - DEBUG [org.opensaml.saml.saml2.profile.impl.AddStatusToResponse:?] - Profile Action AddStatusToResponse: Current state of request was mappable, setting StatusMessage to mapped value
+2021-02-07 09:55:05,298 - DEBUG [org.opensaml.saml.common.binding.impl.SAMLOutboundDestinationHandler:?] - Adding destination to outbound SAML 2 protocol message: http://127.0.0.1:8000/?acs
+2021-02-07 09:55:05,298 - DEBUG [org.opensaml.saml.common.binding.security.impl.EndpointURLSchemeSecurityHandler:?] - Message Handler:  Checking outbound endpoint for allowed URL scheme: http://127.0.0.1:8000/?acs
+2021-02-07 09:55:05,298 - DEBUG [org.opensaml.saml.common.binding.security.impl.SAMLOutboundProtocolMessageSigningHandler:?] - Message Handler:  Message context contained signing parameters, but error response signatures are disabled
+2021-02-07 09:55:05,298 - DEBUG [org.opensaml.saml.saml2.binding.encoding.impl.HTTPPostEncoder:?] - Invoking Velocity template to create POST body
+2021-02-07 09:55:05,298 - DEBUG [org.opensaml.saml.saml2.binding.encoding.impl.HTTPPostEncoder:?] - Encoding action url of 'http://127.0.0.1:8000/?acs' with encoded value 'http&#x3a;&#x2f;&#x2f;127.0.0.1&#x3a;8000&#x2f;&#x3f;acs'
+2021-02-07 09:55:05,298 - DEBUG [org.opensaml.saml.saml2.binding.encoding.impl.HTTPPostEncoder:?] - Marshalling and Base64 encoding SAML message
+2021-02-07 09:55:05,298 - DEBUG [org.opensaml.saml.saml2.binding.encoding.impl.HTTPPostEncoder:?] - Setting RelayState parameter to: 'http://127.0.0.1:8000/', encoded as 'http&#x3a;&#x2f;&#x2f;127.0.0.1&#x3a;8000&#x2f;'
+2021-02-07 09:55:05,299 - DEBUG [PROTOCOL_MESSAGE:?] -
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2p:Response Destination="http://127.0.0.1:8000/?acs"
+    ID="_fec3eb46f57a75e4d4132a3b30a38b17"
+    InResponseTo="ONELOGIN_4e40bd5b53a4651ed7d9589b0c75946cda0f867d"
+    IssueInstant="2021-02-07T09:55:05.296Z" Version="2.0" xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol">
+    <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">https://samltest.id/saml/idp</saml2:Issuer>
+    <saml2p:Status>
+        <saml2p:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Responder"/>
+        <saml2p:StatusMessage>unexpected</saml2p:StatusMessage>
+    </saml2p:Status>
+</saml2p:Response>
+
+2021-02-07 09:55:05,299 - DEBUG [net.shibboleth.idp.profile.impl.RecordResponseComplete:?] - Profile Action RecordResponseComplete: Record response complete
+2021-02-07 09:55:05,299 - INFO [Shibboleth-Audit.SSO:?] - 20210207T095505Z|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect|ONELOGIN_4e40bd5b53a4651ed7d9589b0c75946cda0f867d|http://127.0.0.1:8000/metadata/|http://shibboleth.net/ns/profiles/saml2/sso/browser|https://samltest.id/saml/idp|urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST|_fec3eb46f57a75e4d4132a3b30a38b17||||||
